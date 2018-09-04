@@ -18,7 +18,7 @@ pkgs          = $(shell $(GO) list ./... | grep -v /vendor/)
 
 PREFIX                  ?= $(shell pwd)
 BIN_DIR                 ?= $(shell pwd)
-DOCKER_IMAGE_NAME       ?= snmp-exporter
+DOCKER_IMAGE_NAME       ?= presto-exporter
 DOCKER_IMAGE_TAG        ?= $(subst /,-,$(shell git rev-parse --abbrev-ref HEAD))
 
 
