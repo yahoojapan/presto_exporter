@@ -1,7 +1,7 @@
 presto_exporter
 ==============
 
-Presto exporter for Prometheus. For other metrics from Presto, have a look at the [JMX exporter](https://github.com/prometheus/jmx_exporter) and [Node exporter](https://github.com/prometheus/node_exporter).
+This Prometheus exporter can scrape the metrics from presto cluster, and it should be installed in the coordinator server of presto cluster.
 
 Table of Contents
 -----------------
@@ -112,7 +112,7 @@ For details on the underlying metrics please see [Presto](https://prestodb.io/do
 ```txt
 # HELP presto_cluster_active_workers Active workers of the presto cluster.
 # TYPE presto_cluster_active_workers gauge
-presto_cluster_active_workers 5
+presto_cluster_active_workers 36
 # HELP presto_cluster_blocked_queries Blocked queries of the presto cluster.
 # TYPE presto_cluster_blocked_queries gauge
 presto_cluster_blocked_queries 0
@@ -121,22 +121,20 @@ presto_cluster_blocked_queries 0
 presto_cluster_queued_queries 0
 # HELP presto_cluster_reserved_memory Reserved memory of the presto cluster.
 # TYPE presto_cluster_reserved_memory gauge
-presto_cluster_reserved_memory 0
+presto_cluster_reserved_memory 5.55661368e+08
 # HELP presto_cluster_running_drivers Running drivers of the presto cluster.
 # TYPE presto_cluster_running_drivers gauge
-presto_cluster_running_drivers 0
+presto_cluster_running_drivers 9413
 # HELP presto_cluster_running_queries Running requests of the presto cluster.
 # TYPE presto_cluster_running_queries gauge
-presto_cluster_running_queries 0
+presto_cluster_running_queries 1
 # HELP presto_cluster_total_cpu_time_secs Total cpu time of the presto cluster.
 # TYPE presto_cluster_total_cpu_time_secs gauge
-presto_cluster_total_cpu_time_secs 118176
+presto_cluster_total_cpu_time_secs 4.1377104e+07
 # HELP presto_cluster_total_input_bytes Total input bytes of the presto cluster.
 # TYPE presto_cluster_total_input_bytes gauge
-presto_cluster_total_input_bytes 7.483291091e+10
+presto_cluster_total_input_bytes 1.100504485326412e+15
 # HELP presto_cluster_total_input_rows Total input rows of the presto cluster.
 # TYPE presto_cluster_total_input_rows gauge
-presto_cluster_total_input_rows 4.085938e+09
-# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
-# TYPE process_cpu_seconds_total counter
+presto_cluster_total_input_rows 7.794104814874e+12
 ```
