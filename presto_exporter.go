@@ -91,7 +91,7 @@ func (e Exporter) Describe(ch chan<- *prometheus.Desc) {
 
 func main() {
 	var (
-		listenAddress = kingpin.Flag("web.listen-address", "Address on which to expose metrics and web interface.").Default(":9482").String()
+		listenAddress = kingpin.Flag("web.listen-address", "Address on which to expose metrics and web interface.").Default(":9483").String()
 		metricsPath   = kingpin.Flag("web.telemetry-path", "Path under which to expose metrics.").Default("/metrics").String()
 		opts          = Exporter{}
 	)

@@ -74,7 +74,7 @@ This image is configurable using different flags
 
 | Flag name          | Default    | Description                                          |
 | ------------------ | ---------- | ---------------------------------------------------- |
-| web.listen-address | :9482      | Address to listen on for web interface and telemetry |
+| web.listen-address | :9483      | Address to listen on for web interface and telemetry |
 | web.telemetry-path | /metrics   | Path under which to expose metrics                   |
 
 Help on flags:
