@@ -11,8 +11,9 @@ Table of Contents
 -	[Download](#download)
 -	[Compile](#compile)
 	-	[build binary](#build-binary)
--	[Run](#run)
 	-	[run binary](#run-binary)
+-	[Docker](#docker)
+  	-	[run docker](#run-docker)
 -	[Flags](#flags)
 -	[Metrics](#metrics)
 	-	[Topics](#topics)
@@ -45,14 +46,26 @@ It can use go to binary by youself
 go build presto_exporter.go
 ```
 
-Run
----
-
 ### run binary
 
 ```shell
-presto_exporter
+./presto_exporter [flags]
 ```
+
+Docker
+-------
+
+### run docker
+
+[![Docker Pulls](https://img.shields.io/docker/pulls/yahoojapan/presto-exporter.svg?maxAge=604800)][hub]
+
+To run the presto exporter as a Docker container, run:
+
+```bash
+docker run yahoojapan/presto-exporter:master [flags]
+```
+
+[hub]: https://hub.docker.com/r/yahoojapan/presto-exporter/
 
 Flags
 -----
@@ -61,8 +74,14 @@ This image is configurable using different flags
 
 | Flag name          | Default    | Description                                          |
 | ------------------ | ---------- | ---------------------------------------------------- |
-| web.listen-address | :9101      | Address to listen on for web interface and telemetry |
+| web.listen-address | :9482      | Address to listen on for web interface and telemetry |
 | web.telemetry-path | /metrics   | Path under which to expose metrics                   |
+
+Help on flags:
+
+```bash
+./presto_exporter --help
+```
 
 Metrics
 -------
