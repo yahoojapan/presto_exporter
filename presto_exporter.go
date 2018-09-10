@@ -47,32 +47,32 @@ type Exporter struct {
 
 var (
 	runningQueries = prometheus.NewDesc(
-		prometheus.BuildFQName(namespace, "", "running_queries"),
+		prometheus.BuildFQName(namespace, "", "queries_running"),
 		"Running requests of the presto cluster.",
 		nil, nil,
 	)
 	blockedQueries = prometheus.NewDesc(
-		prometheus.BuildFQName(namespace, "", "blocked_queries"),
+		prometheus.BuildFQName(namespace, "", "queries_blocked"),
 		"Blocked queries of the presto cluster.",
 		nil, nil,
 	)
 	queuedQueries = prometheus.NewDesc(
-		prometheus.BuildFQName(namespace, "", "queued_queries"),
+		prometheus.BuildFQName(namespace, "", "queries_queued"),
 		"Queued queries of the presto cluster.",
 		nil, nil,
 	)
 	activeWorkers = prometheus.NewDesc(
-		prometheus.BuildFQName(namespace, "", "active_workers"),
+		prometheus.BuildFQName(namespace, "", "workers_active"),
 		"Active workers of the presto cluster.",
 		nil, nil,
 	)
 	runningDrivers = prometheus.NewDesc(
-		prometheus.BuildFQName(namespace, "", "running_drivers"),
+		prometheus.BuildFQName(namespace, "", "drivers_running"),
 		"Running drivers of the presto cluster.",
 		nil, nil,
 	)
 	reservedMemory = prometheus.NewDesc(
-		prometheus.BuildFQName(namespace, "", "reserved_memory"),
+		prometheus.BuildFQName(namespace, "", "memory_reserved"),
 		"Reserved memory of the presto cluster.",
 		nil, nil,
 	)
