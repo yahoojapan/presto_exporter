@@ -4,5 +4,5 @@ go:
 - "1.10"
 
 script:
-- make test
+- make format build test
 # - make check_license style unused test staticcheck
