@@ -1,5 +1,6 @@
 presto_exporter
 ==============
+[![Build Status](https://travis-ci.org/yahoojapan/presto_exporter.svg?branch=master)](https://travis-ci.org/yahoojapan/presto_exporter)
 
 This Prometheus exporter can scrape the metrics from presto cluster, and it should be installed in the coordinator server of presto cluster.
 
