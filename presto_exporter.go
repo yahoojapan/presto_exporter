@@ -128,9 +128,9 @@ func main() {
 		w.Write([]byte(`<html>
 			<head><title>Presto Exporter</title></head>
 			<body>
-  		<h1>Presto Exporter</h1>
+			<h1>Presto Exporter</h1>
 			<p><a href="` + *metricsPath + `">Metrics</a></p>
-  		</body>
+			</body>
 			</html>`))
 	})
 
