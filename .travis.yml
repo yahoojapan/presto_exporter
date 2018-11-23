@@ -1,5 +1,6 @@
 language: go
-go: 1.9
+go: 
+- "1.9"
 
 script:
  - make check_license style unused test staticcheck
