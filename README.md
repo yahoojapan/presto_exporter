@@ -22,7 +22,7 @@ Table of Contents
 Compatibility
 -------------
 
-Support [Presto](https://prestodb.io/) version 0.177 (and later).
+Support [Presto](https://prestosql.io/) version 0.177 (and later).
 
 Dependency
 ----------
@@ -89,7 +89,7 @@ Metrics
 
 Documents about exposed Prometheus metrics.
 
-For details on the underlying metrics please see [Presto](https://prestodb.io/docs/current/).
+For details on the underlying metrics please see [Presto](https://prestosql.io/docs/current/).
 
 ### Topics
 
