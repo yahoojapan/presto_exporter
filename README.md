@@ -1,3 +1,8 @@
+## :warning: Deprecation Notice :warning:
+This project has been deprecated. Please consider using [jmx_exporter](https://github.com/prometheus/jmx_exporter) instead.
+
+------
+
 presto_exporter
 ==============
 [![Build Status](https://travis-ci.org/yahoojapan/presto_exporter.svg?branch=master)](https://travis-ci.org/yahoojapan/presto_exporter)
